@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="background-circle"></div>
+
+    <div class="AllContent">
+        <div class="carr">
+            <div class="carousel-container">
+                <div class="carousel-content">
+                    <div class="card card-1 active" >Wealth Wise</div>
+                    <div class="card card-2">Lift Elite</div>
+                    <div class="card card-3">Karate Quest</div>
+                </div>
+                <div class="arrow left" onclick="prevCard()">&#8249;</div>
+                <div class="arrow right" onclick="nextCard()">&#8250;</div>
+            </div>
+        </div>
+
+        <div class="History">
+            <div class="box"> 
+                <div class="desc">
+                    <p id="phrase" class="phrase"></p>
+                    <img class="circle-img" id="cardImage"  alt=" ">
+                </div>
+                <hr>
+                <p id="question" class="question"></p>
+            </div>
+        </div>
+
+        <div class="input">
+            <input placeholder="Any Questions?">
+            <button>Send</button>
+        </div>
+    </div>
+</body>
+</html>

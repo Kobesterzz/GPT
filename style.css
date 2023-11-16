@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0; /* Remove default margin */
     padding: 0;
+    font-family: SF PRO;
 }
 
 .background-circle {
@@ -27,7 +28,7 @@ body {
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(rgb(38, 38, 38), rgb(37, 21, 37));
+    background-image: linear-gradient(rgb(16, 16, 16), rgb(37, 21, 37));
     overflow: hidden;
 }
 
@@ -56,20 +57,20 @@ body {
 }
 
 .card {
-    flex: 0 0 33.33%; /* Adjust based on the number of cards you want visible at once */
+    flex: 33.33% 33.33% 33.33%; /* Adjust based on the number of cards you want visible at once */
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: white;
     background-image: linear-gradient(rgba(155, 84, 255, 0.575), rgba(24, 12, 44, 0.571));
     margin-right: 10px;
-    opacity: 0.5; /* Adjust the opacity as needed */
-    border-radius: 15px; /* Adjust the border-radius as needed */
+    opacity: 0.5; 
+    border-radius: 15px; 
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100px;
     width:25%;
-    transition: opacity 0.3s ease-in-out; /* Add a transition for opacity */
+    transition: opacity 0.3s ease-in-out; 
 }
 
 .card.active {
@@ -101,7 +102,7 @@ body {
 
 .box{
     border:2px solid rgba(209, 209, 209, 0.554);
-    background-image: linear-gradient(rgba(57, 57, 57, 0.621),rgba(255, 255, 255, 0.367));
+    background-image: linear-gradient(rgba(53, 53, 53, 0.621),rgba(255, 255, 255, 0.367));
     backdrop-filter: blur(10px);
     border-radius: 15px;
     color: aliceblue;
@@ -117,13 +118,14 @@ body {
 .desc{
     display:flex;
     flex-direction: row-reverse;
-    
-    justify-content: space-evenly;
+    justify-content: flex-end;
+    column-gap: 75px;
+    padding-top:5px;
 }
 
 .circle-img {
-    width: 50px; /* Adjust the size as needed */
-    height: 50px; /* Adjust the size as needed */
+    width: 50px; 
+    height: 50px; 
     border-radius: 50%;
     margin-bottom: 10px;
     background-color: rgba(255, 232, 216, 0.551);
@@ -140,6 +142,7 @@ input{
     color:white;
     border: none;
     width:1000px;
+    padding-left: 20px;
 }
 
 button{
